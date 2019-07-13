@@ -18,6 +18,7 @@ function updatevars2() {
 
 function updatevars3() {
   cat /opt/azure/containers/setup-custom-search-domains.sh | grep 'realm join' > /opt/azure/containers/realmjoin.sh
+  chmod +x /opt/azure/containers/realmjoin.sh
   bash -x /opt/azure/containers/realmjoin.sh
 }
 
